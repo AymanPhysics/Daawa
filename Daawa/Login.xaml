@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="Login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="214" d:DesignWidth="404">
+    <Grid Background="#B4000000">
+        <Grid Margin="13,19,14,59">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0" />
+                    <GradientStop Color="#FF8DD8A4" Offset="1" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Label Content="المستخدم" Height="28" HorizontalAlignment="Center" Name="Label1" Margin="3,33,300,75" Width="74" FontStretch="Normal" />
+            <Label Content="كلمة المرور" Height="28" HorizontalAlignment="Center" Name="Label2" VerticalAlignment="Center" Width="73" Margin="3,63,301,45" />
+            <ComboBox Height="28" HorizontalAlignment="Center" IsEditable="True" IsSynchronizedWithCurrentItem="{x:Null}" Name="Username" TabIndex="1" VerticalAlignment="Center" Width="285" Margin="81,33,10,75">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+            </ComboBox>
+            <PasswordBox Height="28" HorizontalAlignment="Center" Name="Password" TabIndex="2" VerticalAlignment="Center" Width="285" Margin="81,63,10,45">
+                <PasswordBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#37FFFF00" Offset="1" />
+                    </LinearGradientBrush>
+                </PasswordBox.Background>
+            </PasswordBox>
+        </Grid>
+        <Button Content="دخول" HorizontalAlignment="Center"  Name="Button2" TabIndex="3" VerticalAlignment="Bottom" Width="380" Margin="12,0,12,13" Background="LimeGreen" IsDefault="True">
+        </Button>
+    </Grid>
+</UserControl>
